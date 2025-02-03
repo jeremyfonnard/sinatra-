@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Potin</title>
+  </head>
+  <body>
+    <h1>Voici la page du potin n°<%= params['id'] %></h1>
+    <p>Auteur : <%= gossip.author %></p>
+    <p>Contenu : <%= gossip.content %></p>
+    
+    <p>
+      <a href="/">Retour à la liste des potins</a> | 
+      <a href="/gossips/<%= params['id'] %>/edit/">Éditer ce potin</a>
+    </p>
+  </body>
+</html>
